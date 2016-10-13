@@ -19,6 +19,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.disable {
+  display: none;
+}
+
 .relative {
   position: relative;
 }
@@ -41,7 +45,7 @@ a:hover {
   }
 }
 
-.content-wrapper {
+.welcome-wrapper {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -67,17 +71,18 @@ a:hover {
     margin-top: 0;
     padding-bottom: 50px;
   }
-  ul {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    text-align: center;
-    z-index: 2;
-    li a {
-      color: $cyan;
-      font-size: 1.25rem;
-      margin: 0 40px;
-    }
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+  li a {
+    color: $cyan;
+    font-size: 1.25rem;
+    margin: 0 40px;
   }
 }
 
@@ -133,4 +138,16 @@ a:hover {
   &:hover {
     left: 10px;
   }
+}
+
+// Academics
+
+#academicsNav {
+  width: 100%;
+  text-align: center;
+}
+
+#foundations, #liberalArts, #majors {
+  height: 400px;
+  border: solid 1px red;
 }
