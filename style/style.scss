@@ -30,6 +30,17 @@ a:hover {
   }
 }
 
+.risd-home {
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  z-index: 3;
+  img {
+    width: 150px;
+    opacity: 0.75;
+  }
+}
+
 .content-wrapper {
   position: absolute;
   width: 100vw;
