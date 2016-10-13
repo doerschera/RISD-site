@@ -1,16 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import 'helpers/variables';
+@import "helpers/mixins";
+
+body, html {
+  height: 100%;
+}
 
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 400;
 }
 
-// .welcome {
-//   color: #4dd2ff;
-//   position: absolute;
-//   width: 100%;
-//   background-color: white;
-// }
+li {
+  display: inline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.relative {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  h4 {
+    color: $cyan;
+  }
+}
 
 .content-wrapper {
   position: absolute;
@@ -23,17 +41,32 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0.7;
   }
   h1 {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
+    left: 25%;
     color: #4dd2ff;
     text-align: center;
     line-height: 125%;
     font-size: 6rem;
     z-index: 2;
     margin-top: 0;
+    padding-bottom: 50px;
+  }
+  ul {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+    li a {
+      color: $cyan;
+      font-size: 1.25rem;
+      margin: 0 40px;
+    }
   }
 }
 
@@ -42,5 +75,51 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.5;
+}
+
+.arrow {
+  z-index: 3;
+}
+
+#arrow-down {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  width: 50vw;
+  left: 25vw;
+  text-align: center;
+  @include transition(bottom, 1s);
+  a, img {
+    display: inline;
+  }
+  img {
+    height: 20vh;
+  }
+  &:hover {
+    bottom: 10px;
+  }
+}
+
+#arrow-right, #arrow-left {
+  height: 50vh;
+  top: 25vh;
+}
+
+#arrow-right {
+  @include transition(right, 1s);
+  right: 0;
+  margin-right: 25px;
+  &:hover {
+    right: 10px;
+  }
+}
+
+#arrow-left {
+  @include transition(left, 1s);
+  left: 0;
+  margin-left: 25px;
+  &:hover {
+    left: 10px;
+  }
 }
