@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+body, html {
+  height: 100%; }
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400; }
+
+li {
+  display: inline; }
+
+a:hover {
+  text-decoration: underline; }
+
+.relative {
+  position: relative; }
+
+.arrow {
+  position: absolute; }
+  .arrow h4 {
+    color: #4dd2ff; }
+
+.risd-home {
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  z-index: 3; }
+  .risd-home img {
+    width: 150px;
+    opacity: 0.75; }
+
+.content-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0; }
+  .content-wrapper img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7; }
+  .content-wrapper h1 {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: 25%;
+    color: #4dd2ff;
+    text-align: center;
+    line-height: 125%;
+    font-size: 6rem;
+    z-index: 2;
+    margin-top: 0;
+    padding-bottom: 50px; }
+  .content-wrapper ul {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    z-index: 2; }
+    .content-wrapper ul li a {
+      color: #4dd2ff;
+      font-size: 1.25rem;
+      margin: 0 40px; }
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.5; }
+
+.arrow {
+  z-index: 3; }
+
+#arrow-down {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  width: 50vw;
+  left: 25vw;
+  text-align: center;
+  -webkit-transition: bottom 1s;
+  -moz-trasition: bottom 1s;
+  transition: bottom 1s; }
+  #arrow-down a, #arrow-down img {
+    display: inline; }
+  #arrow-down img {
+    height: 20vh; }
+  #arrow-down:hover {
+    bottom: 10px; }
+
+#arrow-right, #arrow-left {
+  height: 50vh;
+  top: 25vh; }
+
+#arrow-right {
+  -webkit-transition: right 1s;
+  -moz-trasition: right 1s;
+  transition: right 1s;
+  right: 0;
+  margin-right: 25px; }
+  #arrow-right:hover {
+    right: 10px; }
+
+#arrow-left {
+  -webkit-transition: left 1s;
+  -moz-trasition: left 1s;
+  transition: left 1s;
+  left: 0;
+  margin-left: 25px; }
+  #arrow-left:hover {
+    left: 10px; }
+
+/*# sourceMappingURL=style.css.map */
