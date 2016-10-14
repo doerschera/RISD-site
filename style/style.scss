@@ -27,6 +27,10 @@ a:hover {
   position: relative;
 }
 
+.white-box {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .arrow {
   position: absolute;
   h4 {
@@ -60,7 +64,6 @@ a:hover {
   }
   h1 {
     width: 50%;
-    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     left: 25%;
     color: #4dd2ff;
@@ -152,6 +155,9 @@ a:hover {
 #academicsNav {
   width: 100%;
   text-align: center;
+  li a {
+    color: $teal;
+  }
 }
 
 .row-margin {
@@ -161,10 +167,9 @@ a:hover {
 
 #foundations, #liberalArts, .majors {
   padding: 15px;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.75);
     h1 {
       margin: 0 auto;
+      color: $teal;
     }
     p {
       font-weight: 300;
@@ -181,6 +186,35 @@ a:hover {
   @include dashed-border(bottom, $teal);
 }
 
+.majors {
+  padding-top: 15px;
+}
+
 #majorDescription {
   @include dashed-border(right, $teal);
+}
+
+.circle {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  background-color: $teal;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+}
+
+#majorsList {
+  .row {
+    margin-bottom: 10px;
+  }
+  #row1 {
+    margin-top: 20px;
+  }
+  p {
+    color: $teal;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+  }
 }
