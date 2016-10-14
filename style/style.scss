@@ -19,8 +19,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.disable {
+  display: none;
+}
+
 .relative {
   position: relative;
+}
+
+.white-box {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .arrow {
@@ -41,7 +49,7 @@ a:hover {
   }
 }
 
-.content-wrapper {
+.welcome-wrapper {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -56,7 +64,6 @@ a:hover {
   }
   h1 {
     width: 50%;
-    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     left: 25%;
     color: #4dd2ff;
@@ -67,17 +74,18 @@ a:hover {
     margin-top: 0;
     padding-bottom: 50px;
   }
-  ul {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    text-align: center;
-    z-index: 2;
-    li a {
-      color: $cyan;
-      font-size: 1.25rem;
-      margin: 0 40px;
-    }
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+  li a {
+    color: $cyan;
+    font-size: 1.25rem;
+    margin: 0 40px;
   }
 }
 
@@ -132,5 +140,128 @@ a:hover {
   margin-left: 25px;
   &:hover {
     left: 10px;
+  }
+}
+
+// Academics
+#academics {
+  background-image: url('../images/pattern-grey.png');
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+}
+
+#academicsNav {
+  width: 100%;
+  text-align: center;
+  li a {
+    color: $teal;
+  }
+}
+
+.row-margin {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+#foundations, #liberalArts, .majors {
+  padding: 15px;
+    h1 {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-size: 3rem;
+      color: $teal;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+    }
+    a {
+      color: $teal;
+    }
+}
+
+#foundations {
+  @include dashed-border(bottom, $teal);
+  @include dashed-border(right, $teal);
+}
+
+#liberalArts {
+  @include dashed-border(bottom, $teal);
+}
+
+.majors {
+  padding-top: 15px;
+}
+
+#majorDescription {
+  @include dashed-border(right, $teal);
+  h1 {
+    padding-top: 20px;
+  }
+}
+
+.circle {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  background-color: $teal;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+@for $i from 1 through 16 {
+  #mj#{$i} {
+    background-color: darken($base-teal, $i*5%);
+  }
+}
+
+#majorsList {
+  .row {
+    margin-bottom: 10px;
+  }
+  #row1 {
+    margin-top: 20px;
+  }
+  a:hover {
+    color: white;
+  }
+  p {
+    color: $teal;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: darken($base-teal, 10%);
+  text-align: center;
+  padding-top: 10px;
+  ul {
+    margin-top: 0;
+    li {
+      margin: 0 10px;
+      color: white;
+      font-weight: 300;
+    }
+    li:nth-child(1), li:nth-child(2) {
+      border-right: solid 1px white;
+      padding-right: 20px;
+    }
+    a {
+      color: white;
+      font-weight: 300;
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
