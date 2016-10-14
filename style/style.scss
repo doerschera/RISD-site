@@ -192,16 +192,27 @@ a:hover {
 
 #majorDescription {
   @include dashed-border(right, $teal);
+  h1 {
+    padding-top: 20px;
+  }
 }
 
 .circle {
   margin: auto;
   height: 50px;
   width: 50px;
-  background-color: $teal;
   border-radius: 100%;
   color: white;
   text-align: center;
+  background-color: $teal;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+@for $i from 1 through 16 {
+  #mj#{$i} {
+    background-color: darken($base-teal, $i*5%);
+  }
 }
 
 #majorsList {
@@ -210,6 +221,9 @@ a:hover {
   }
   #row1 {
     margin-top: 20px;
+  }
+  a:hover {
+    color: white;
   }
   p {
     color: $teal;

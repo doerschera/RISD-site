@@ -157,20 +157,74 @@ a:hover {
 
 #majorDescription {
   border-right: dashed 2px #4396b5; }
+  #majorDescription h1 {
+    padding-top: 20px; }
 
 .circle {
   margin: auto;
   height: 50px;
   width: 50px;
-  background-color: #4396b5;
   border-radius: 100%;
   color: white;
-  text-align: center; }
+  text-align: center;
+  background-color: #4396b5;
+  line-height: 50px;
+  font-weight: 300; }
+
+#mj1 {
+  background-color: #c8e1ea; }
+
+#mj2 {
+  background-color: #b5d7e3; }
+
+#mj3 {
+  background-color: #a3cddc; }
+
+#mj4 {
+  background-color: #90c3d5; }
+
+#mj5 {
+  background-color: #7eb9ce; }
+
+#mj6 {
+  background-color: #6bafc7; }
+
+#mj7 {
+  background-color: #59a5c0; }
+
+#mj8 {
+  background-color: #469bb9; }
+
+#mj9 {
+  background-color: #3f8ca7; }
+
+#mj10 {
+  background-color: #387c94; }
+
+#mj11 {
+  background-color: #316d82; }
+
+#mj12 {
+  background-color: #2a5d6f; }
+
+#mj13 {
+  background-color: #234e5d; }
+
+#mj14 {
+  background-color: #1c3e4a; }
+
+#mj15 {
+  background-color: #152f38; }
+
+#mj16 {
+  background-color: #0e1f25; }
 
 #majorsList .row {
   margin-bottom: 10px; }
 #majorsList #row1 {
   margin-top: 20px; }
+#majorsList a:hover {
+  color: white; }
 #majorsList p {
   color: #4396b5;
   text-align: center;
