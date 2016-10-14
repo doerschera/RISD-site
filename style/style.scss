@@ -169,11 +169,16 @@ a:hover {
   padding: 15px;
     h1 {
       margin: 0 auto;
+      margin-bottom: 20px;
+      font-size: 3rem;
       color: $teal;
     }
     p {
       font-weight: 300;
       font-size: 14px;
+    }
+    a {
+      color: $teal;
     }
 }
 

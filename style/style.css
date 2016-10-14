@@ -140,10 +140,14 @@ a:hover {
   padding: 15px; }
   #foundations h1, #liberalArts h1, .majors h1 {
     margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 3rem;
     color: #4396b5; }
   #foundations p, #liberalArts p, .majors p {
     font-weight: 300;
     font-size: 14px; }
+  #foundations a, #liberalArts a, .majors a {
+    color: #4396b5; }
 
 #foundations {
   border-bottom: dashed 2px #4396b5;
