@@ -156,12 +156,13 @@ a:hover {
 
 .row-margin {
   margin-top: 100px;
+  margin-bottom: 0;
 }
 
 #foundations, #liberalArts, .majors {
   padding: 15px;
   height: 400px;
-  border: solid 1px red;
+  background-color: rgba(255, 255, 255, 0.75);
     h1 {
       margin: 0 auto;
     }
@@ -172,7 +173,14 @@ a:hover {
 }
 
 #foundations {
-  border-color: #006666;
-  border-width: 3px;
-  background-color: white;
+  @include dashed-border(bottom, $teal);
+  @include dashed-border(right, $teal);
+}
+
+#liberalArts {
+  @include dashed-border(bottom, $teal);
+}
+
+#majorDescription {
+  @include dashed-border(right, $teal);
 }

@@ -3,3 +3,7 @@
   -moz-trasition: $property $duration;
   transition: $property $duration;
 }
+
+@mixin dashed-border($side, $color) {
+  border-#{$side}: dashed 2px $color;
+}
