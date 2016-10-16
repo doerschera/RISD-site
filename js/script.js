@@ -288,6 +288,96 @@
 
   }
   var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  var image = {
+    url: 'http://i63.tinypic.com/nlefki.jpg',
+    scaledSize : new google.maps.Size(22, 32)
+  }
+
+  var woodsGerry = new google.maps.Marker({
+    position: {lat: 41.82865, lng: -71.40526},
+    icon: 'http://i64.tinypic.com/2cyfplg.jpg',
+    map: map,
+    title: 'Woods-Gerry'
+  });
+
+  var icons = {
+    library: {
+      icon:'../images/15west.png'
+    },
+    apparel: {
+      icon:'../images/apparel.png'
+    },
+    auditorium: {
+      icon:'../images/auditorium.png'
+    },
+    beb: {
+      icon: '../images/beb.png'
+    },
+    bensonHall: {
+      icon: '../images/bensonHall.png'
+    },
+    carrHaus: {
+      icon: '../images/carrHaus.png'
+    },
+    CIT: {
+      icon: '../images/CIT.png'
+    },
+    collegeBuilding: {
+      icon: '../images/collegeBuilding.png'
+    },
+    designCenter: {
+      icon: '../images/designCenter.png'
+    },
+    id: {
+      icon: '../images/id.png'
+    },
+    ISB: {
+      icon: '../images/ISB.png'
+    },
+    marketHosue: {
+      icon: '../images/marketHosue.png'
+    },
+    memHall: {
+      icon: '../images/memHall.png'
+    },
+    metclaf: {
+      icon: '../images/metclaf.png'
+    },
+    museum: {
+      icon: '../images/museum.png'
+    },
+    provwash: {
+      icon: '../images/provwash.png'
+    },
+    quad: {
+      icon: '../images/quad.png'
+    },
+    waterman: {
+      icon: '../images/waterman.png'
+    },
+    woodsGerry: {
+      icon: '../images/woodsGerry.png'
+    }
+  }
+
+  var buildings = [
+    {
+      position: new google.maps.LatLng(41.82865, -71.40526),
+      type: 'woodsGerry'
+    }
+  ]
+
+  function addMarker(building) {
+    var marker = new google.maps.Marker({
+      position: buildings.position,
+      icon: icons[building.type].icon,
+      map: map
+    });
+  }
+
+  // var woodsGerry = buildings[0]
+  // addMarker(woodsGerry);
 }
 
 
