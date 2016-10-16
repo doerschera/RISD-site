@@ -1,10 +1,7 @@
-$(document).ready(function() {
 
-  // css fixes
-  responsiveColumns();
-  $(window).resize(responsiveColumns);
+module.exports = {
 
-  function responsiveColumns() {
+  responsiveColumns: function () {
     columnHeight('#majorsList', '#majorDescription');
     columnHeight('#liberalArts', '#foundations');
     columnHeight('#slIntro', '#slStudents');
@@ -12,9 +9,9 @@ $(document).ready(function() {
     columnHeight('#slLibrary', '#slAlumni', '#slEHP');
     columnHeight('#slDining', '#slCafes');
     columnHeight('#slDorms', '#slClubs')
-  }
+  },
 
-  function columnHeight(left, right, center) {
+  columnHeight: function (left, right, center) {
     var height1 = $(left).css('height');
     var height2 = $(right).css('height');
     var height3 = $(center).css('height');
@@ -37,7 +34,5 @@ $(document).ready(function() {
         $(left).css('min-height', height2);
       }
     }
-
   }
-
-})
+}
