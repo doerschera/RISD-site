@@ -238,10 +238,61 @@ a:hover {
   }
 }
 
+#student-life {
+  background-image: url('../images/pattern-grey.png');
+  background-size: cover;
+  background-repeat: repeat;
+  position: absolute;
+  .white-box {
+    padding: 15px;
+  }
+  h1,h2,h3,h4,h5 {
+    color: $teal;
+    text-align: center;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .container a {
+    color: $teal;
+  }
+  .row {
+    @include dashed-border(bottom, $teal);
+    margin-bottom: 0;
+  }
+}
+
+#slIntro, #slDining, #slDorms {
+  h2 {
+    text-align: left;
+  }
+  @include dashed-border(right, $teal);
+}
+
+#slGalleries, #slAlumni {
+  @include dashed-border(right, $teal);
+  @include dashed-border(left, $teal);
+}
+
+#slDorms, #slCafes, #slDining {
+  p {
+    margin-bottom: 3px;
+  }
+  h4 {
+    text-align: left;
+    margin-top: 0;
+  }
+  h3 {
+    margin-top: 0;
+  }
+}
+
+
 .footer {
   height: 50px;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   background-color: darken($base-teal, 10%);
   text-align: center;
   padding-top: 10px;
@@ -263,18 +314,5 @@ a:hover {
         color: white;
       }
     }
-  }
-}
-
-#student-life {
-  .white-box {
-    padding: 15px;
-  }
-  p {
-    font-weight: 300;
-    font-size: 14px;
-  }
-  a {
-    color: $teal;
   }
 }
