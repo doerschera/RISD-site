@@ -243,11 +243,14 @@ a:hover {
   background-size: cover;
   background-repeat: repeat;
   position: absolute;
+  .nav a {
+    color: $blue;
+  }
   .white-box {
     padding: 15px;
   }
   h1,h2,h3,h4,h5 {
-    color: $teal;
+    color: $blue;
     text-align: center;
   }
   p {
@@ -255,10 +258,10 @@ a:hover {
     font-size: 14px;
   }
   .container a {
-    color: $teal;
+    color: $blue;
   }
   .row {
-    @include dashed-border(bottom, $teal);
+    @include dashed-border(bottom, $blue);
     margin-bottom: 0;
   }
 }
@@ -267,12 +270,12 @@ a:hover {
   h2 {
     text-align: left;
   }
-  @include dashed-border(right, $teal);
+  @include dashed-border(right, $blue);
 }
 
 #slGalleries, #slAlumni {
-  @include dashed-border(right, $teal);
-  @include dashed-border(left, $teal);
+  @include dashed-border(right, $blue);
+  @include dashed-border(left, $blue);
 }
 
 #slDorms, #slCafes, #slDining {
@@ -288,12 +291,30 @@ a:hover {
   }
 }
 
+#slMuseum, #slAlumni, #slDorms {
+  h1, h2, h3, h4, a:hover {
+    color: lighten($blue, 15%);
+  }
+}
+
+#slNatureLab, #slLibrary, #slClubs {
+  h1, h2, h3, h4, a:hover {
+    color: darken($blue, 10%);
+  }
+}
+
+#slStudents, #slGalleries, #slCafes {
+  h1, h2, h3, h4, a:hover {
+    color: darken($blue, 15%)
+  }
+}
+
 
 .footer {
   height: 50px;
   width: 100%;
   margin-top: 100px;
-  background-color: darken($base-teal, 10%);
+  background-color: lighten($blue, 15%);
   text-align: center;
   padding-top: 10px;
   ul {

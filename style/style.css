@@ -240,28 +240,30 @@ a:hover {
   background-size: cover;
   background-repeat: repeat;
   position: absolute; }
+  #student-life .nav a {
+    color: #3973ac; }
   #student-life .white-box {
     padding: 15px; }
   #student-life h1, #student-life h2, #student-life h3, #student-life h4, #student-life h5 {
-    color: #4396b5;
+    color: #3973ac;
     text-align: center; }
   #student-life p {
     font-weight: 300;
     font-size: 14px; }
   #student-life .container a {
-    color: #4396b5; }
+    color: #3973ac; }
   #student-life .row {
-    border-bottom: dashed 2px #4396b5;
+    border-bottom: dashed 2px #3973ac;
     margin-bottom: 0; }
 
 #slIntro, #slDining, #slDorms {
-  border-right: dashed 2px #4396b5; }
+  border-right: dashed 2px #3973ac; }
   #slIntro h2, #slDining h2, #slDorms h2 {
     text-align: left; }
 
 #slGalleries, #slAlumni {
-  border-right: dashed 2px #4396b5;
-  border-left: dashed 2px #4396b5; }
+  border-right: dashed 2px #3973ac;
+  border-left: dashed 2px #3973ac; }
 
 #slDorms p, #slCafes p, #slDining p {
   margin-bottom: 3px; }
@@ -271,11 +273,20 @@ a:hover {
 #slDorms h3, #slCafes h3, #slDining h3 {
   margin-top: 0; }
 
+#slMuseum h1, #slMuseum h2, #slMuseum h3, #slMuseum h4, #slMuseum a:hover, #slAlumni h1, #slAlumni h2, #slAlumni h3, #slAlumni h4, #slAlumni a:hover, #slDorms h1, #slDorms h2, #slDorms h3, #slDorms h4, #slDorms a:hover {
+  color: #6599cc; }
+
+#slNatureLab h1, #slNatureLab h2, #slNatureLab h3, #slNatureLab h4, #slNatureLab a:hover, #slLibrary h1, #slLibrary h2, #slLibrary h3, #slLibrary h4, #slLibrary a:hover, #slClubs h1, #slClubs h2, #slClubs h3, #slClubs h4, #slClubs a:hover {
+  color: #2c5986; }
+
+#slStudents h1, #slStudents h2, #slStudents h3, #slStudents h4, #slStudents a:hover, #slGalleries h1, #slGalleries h2, #slGalleries h3, #slGalleries h4, #slGalleries a:hover, #slCafes h1, #slCafes h2, #slCafes h3, #slCafes h4, #slCafes a:hover {
+  color: #264d73; }
+
 .footer {
   height: 50px;
   width: 100%;
   margin-top: 100px;
-  background-color: #b5d7e3;
+  background-color: #6599cc;
   text-align: center;
   padding-top: 10px; }
   .footer ul {
