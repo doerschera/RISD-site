@@ -286,13 +286,13 @@
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
   var image = {
-    url: 'http://i63.tinypic.com/nlefki.jpg',
-    scaledSize : new google.maps.Size(22, 32)
+    url: 'http://i64.tinypic.com/352ptvr.jpg',
+    scaledSize : new google.maps.Size(66, 98)
   }
 
   var woodsGerry = new google.maps.Marker({
     position: {lat: 41.82865, lng: -71.40526},
-    icon: 'http://i64.tinypic.com/2cyfplg.jpg',
+    icon: image,
     map: map,
     title: 'Woods-Gerry'
   });
