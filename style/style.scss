@@ -309,6 +309,22 @@ a:hover {
   }
 }
 
+// Tour and Map
+
+#tourMap {
+  background-image: url('../images/pattern50.png');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+#mapWrapper {
+  margin-top: 100px;
+  padding: 20px;
+  #map {
+    height: 500px;
+  }
+
+}
 
 .footer {
   height: 50px;

@@ -210,7 +210,7 @@
       </section>
 
       <!-- Student Life -->
-      <section>
+      <section class="disable">
         <div id="student-life">
           <div id="studentNav">
             <ul class="nav">
@@ -235,25 +235,25 @@
             <!-- Row 2 -->
             <div class="row">
               <div class="col m5 valign-wrapper white-box" id="slMuseum">
-                <a href="#" target="_blank"><h1>RISD Museum</h1></a>
+                <a href="http://risdmuseum.org/" target="_blank"><h1>RISD Museum</h1></a>
               </div>
               <div class="col m3 valign-wrapper white-box" id="slGalleries">
-                <a href="#" target="_blank"><h4>10+ Student Gallery Spaces</h4></a>
+                <a href="https://events.risd.edu/?ref=ournav#_=_" target="_blank"><h4>10+ Student Gallery Spaces</h4></a>
               </div>
               <div class="col m4 valign-wrapper white-box" id="slNatureLab">
-                <a href="#" target="_blank"><h2>Nature Lab</h2></a>
+                <a href="http://naturelab.risd.edu/" target="_blank"><h2>Nature Lab</h2></a>
               </div>
             </div>
             <!-- Row 3 -->
             <div class="row">
               <div class="col m6 valign-wrapper white-box" id="slLibrary">
-                <a href="#" target="_blank"><h1>Fleet Library</h1></a>
+                <a href="https://library.risd.edu/" target="_blank"><h1>Fleet Library</h1></a>
               </div>
               <div class="col m3 valign-wrapper white-box" id="slAlumni">
-                <a href="#" target="_blank"><h3>26,267 Alumni</h3></a>
+                <a href="http://www.risdcareers.com/" target="_blank"><h3>26,267 Alumni</h3></a>
               </div>
               <div class="col m3 valign-wrapper white-box" id="slEHP">
-                <a href="#" target="_blank"><h5>European Honors Program</h5></a>
+                <a href="http://www.risd.edu/academics/global-partners-programs/" target="_blank"><h5>European Honors Program</h5></a>
               </div>
             </div>
             <!-- Row 4 -->
@@ -262,7 +262,7 @@
                 <ul>
                   <li><p>2 dining halls</p></li>
                   <li>
-                    <a href="#" target="_blank"><h3>The Met & Portfolio</h3></a>
+                    <a href="http://www.risd.edu/Students/Dining/On-Campus/" target="_blank"><h3>The Met & Portfolio</h3></a>
                   </li>
                 </ul>
               </div>
@@ -274,7 +274,7 @@
                     </p>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><h4>Carr Haus, Watermark, & Jolly Rodger</h4></a>
+                    <a href="http://www.risd.edu/Students/Dining/On-Campus/" target="_blank"><h4>Carr Haus, Watermark, & Jolly Rodger</h4></a>
                   </li>
                 </ul>
               </div>
@@ -289,16 +289,52 @@
                     </p>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><h4>The Quad, Hill Houses, 15 West, Charles Landing</h4></a>
+                    <a href="http://www.risd.edu/Students/Residence_Life/" target="_blank"><h4>The Quad, Hill Houses, 15 West, Charles Landing</h4></a>
                   </li>
                 </ul>
               </div>
               <div class="col m5 valign-wrapper white-box" id="slClubs">
-                <a href="#" target="_blank"><h2>50+ Clubs and Teams</h2></a>
+                <a href="http://csi.risd.edu/Clubs" target="_blank"><h2>50+ Clubs and Teams</h2></a>
               </div>
             </div>
           </div>
           <!-- Footer -->
+          <div class="footer">
+            <ul>
+              <li><a href="http://www.risd.edu/admissions/" target="_blank">Apply to RISD</a></li>
+              <li><a href="http://www.risd.edu/Admissions/Visit_RISD/" target="_blank">Visit in Person</a></li>
+              <li>See more:</li>
+              <li><a href="http://portfolios.risd.edu" target="_blank"> RISD Behance</a></li>
+              <li><a href="http://our.risd.edu/" target="_blank">Our RISD</a></li>
+              <li><a href="http://welcome.risd.edu" target="_blank">Admissions Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour -->
+      <section class=''>
+        <div id='tourMap'>
+          <div id="tourNav">
+            <ul class="nav">
+              <li><a href="#academics">Academics</a></li>
+              <li><a href="#landing">Home</a></li>
+              <li><a href="#tour">Tour</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="white-box col m6" id="mapWrapper">
+                <div id="map">
+
+                </div>
+              </div>
+              <div class="white-box col m6">
+                <button type="button" id='next'>next</button>
+              </div>
+            </div>
+          </div>
+          <!-- Tour Footer -->
           <div class="footer">
             <ul>
               <li><a href="http://www.risd.edu/admissions/" target="_blank">Apply to RISD</a></li>
@@ -318,6 +354,9 @@
     <!-- Compiled and minified jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Local JS file -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Google Maps -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBAEK3vVBQM75RQiHTvMYe8WiG-ah6GZNY&callback=initMap"
+    async defer></script>
   </body>
 </html>
