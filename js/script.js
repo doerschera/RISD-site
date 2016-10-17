@@ -8,6 +8,7 @@
   // initialize google map //
   -------------------------*/
   var map;
+  var marker;
   var buildings = [
     {
       position: {lat: 41.82865, lng: -71.40526},
@@ -301,7 +302,7 @@ function initMap() {
       scaledSize : new google.maps.Size(44, 64)
     }
 
-    var marker = new google.maps.Marker({
+    marker = new google.maps.Marker({
       position: buildings[0].position,
       icon: image,
       map: map,
@@ -313,6 +314,12 @@ function initMap() {
 
   function newLocation() {
     map.panTo(buildings[1].position);
+    marker = new google.maps.Marker({
+      position: buildings[1].position,
+      icon: image,
+      map: map,
+      title: buildings[1].type
+    })
   }
 
   $('#next').on('click', function() {
