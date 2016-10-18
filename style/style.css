@@ -317,14 +317,6 @@ p {
   #mapWrapper #map {
     height: 500px; }
 
-#buildingsLink {
-  background-color: #4dd2ff;
-  padding: 5px;
-  position: absolute;
-  bottom: 6px;
-  text-align: center;
-  font-size: 12px; }
-
 #tourInfo {
   box-sizing: content-box;
   margin-top: 100px;
@@ -336,6 +328,31 @@ p {
     text-align: center; }
   #tourInfo p {
     padding: 0 10px; }
+
+#stopNav {
+  position: absolute;
+  bottom: 0;
+  text-align: center; }
+  #stopNav div {
+    display: inline; }
+  #stopNav a {
+    line-height: 24px;
+    font-size: 14px; }
+  #stopNav i {
+    color: #4dd2ff;
+    width: 24px;
+    vertical-align: text-bottom;
+    font-size: 20px; }
+
+#seeAll {
+  padding-top: 3px;
+  font-weight: 300; }
+
+#next {
+  float: right; }
+
+#prev {
+  float: left; }
 
 #images {
   margin-top: 50px; }
