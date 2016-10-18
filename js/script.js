@@ -1,9 +1,4 @@
 
-
-  // css fixes
-  // columns.responsiveColumns();
-  // $(window).resize(columns.responsiveColumns);
-
   /* ------------------------
   // initialize google map //
   -------------------------*/
@@ -85,7 +80,7 @@
       type: 'CIT'
     }
   ];
-
+  
 function initMap() {
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
