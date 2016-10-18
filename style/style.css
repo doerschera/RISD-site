@@ -29,11 +29,19 @@ p {
   font-weight: 300;
   font-size: 14px; }
 
+.btn {
+  background-color: #4dd2ff; }
+  .btn:hover {
+    background-color: #4dd2ff; }
+
 .disable {
   display: none; }
 
 .relative {
   position: relative; }
+
+.center {
+  text-align: center; }
 
 .white-box {
   background-color: rgba(255, 255, 255, 0.6); }
@@ -312,8 +320,7 @@ p {
 
 #mapWrapper {
   margin-top: 100px;
-  padding: 20px;
-  padding-bottom: 50px; }
+  padding: 20px; }
   #mapWrapper #map {
     height: 500px; }
 
@@ -321,17 +328,19 @@ p {
   box-sizing: content-box;
   margin-top: 100px;
   height: 500px;
-  padding: 20px 0;
-  padding-bottom: 50px; }
+  padding: 20px 0; }
   #tourInfo h1 {
     color: #4dd2ff;
     text-align: center; }
   #tourInfo p {
     padding: 0 10px; }
 
+#startTour {
+  margin-top: 20px; }
+
 #stopNav {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   text-align: center; }
   #stopNav div {
     display: inline; }
